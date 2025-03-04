@@ -87,7 +87,7 @@ export default function Stepper({
   return (
     <div className="min-h-full" {...rest}>
       <div
-        className={`bg-white mx-auto w-full rounded-3xl shadow-sm py-10 px-8 ${stepCircleContainerClassName}`}
+        className={`bg-white mx-auto w-full rounded-3xl py-10 px-8 ${stepCircleContainerClassName}`}
       >
         <h2 className="text-[#4589FF] text-[32px] font-extrabold">
           How do I work?
