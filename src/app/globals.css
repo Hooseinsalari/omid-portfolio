@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
+:root {
+  --font-gilroy: "Gilroy", sans-serif;
+}
+
+body {
+  font-family: var(--font-gilroy);
+}
+
 @theme {
   --my-gradient: conic-gradient(
     from 270deg at 50% 50%,
     #fff 0deg,
     #f2f4f8 360deg
   );
+  --font-gilroy: "Gilroy", sans-serif;
 }
