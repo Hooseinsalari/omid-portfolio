@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import localFont from "next/font/local";
+import Footer from "@/components/Footer/Footer";
 
 const gilroy = localFont({
   src: [
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body className={`${gilroy.variable} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
