@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --my-gradient: conic-gradient(
+    from 270deg at 50% 50%,
+    #fff 0deg,
+    #f2f4f8 360deg
+  );
+}
