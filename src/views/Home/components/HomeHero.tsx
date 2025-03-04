@@ -19,7 +19,7 @@ function HomeHero() {
         url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100..1000&display=swap');`}
       </style>
 
-      <div className="flex items-center justify-between flex-row min-h-screen px-[120px]">
+      <div className="flex items-center justify-between flex-row min-h-screen px-[120px] py-[157px]">
         <div className="w-full">
           <div
             ref={containerRef}
