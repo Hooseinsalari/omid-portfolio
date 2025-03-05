@@ -6,8 +6,7 @@ import { ImportIcon, LinkedinIcon } from "../icons/icons";
 import Image from "next/image";
 import TiltedCard from "@/reactBits/TiltedCard/TiltedCard";
 import SpotlightCard from "@/reactBits/SpotlightCard/SpotlightCard";
-import { DESIGN_TOPICS, ICON_COMPONENTS } from "../constants/heroConstant";
-import InfiniteScroll from "@/reactBits/InfiniteScroll/InfiniteScroll";
+import { ICON_COMPONENTS } from "../constants/heroConstant";
 
 function HomeHero() {
   const containerRef = useRef(null);
@@ -85,7 +84,7 @@ function HomeHero() {
             />
           </div>
           <div className="col-span-2 row-span-4 col-start-5 overflow-hidden bg-[#21272A] rounded-3xl">
-          {/* <InfiniteScroll
+            {/* <InfiniteScroll
             items={DESIGN_TOPICS}
             isTilted={true}
             tiltDirection="left"
@@ -98,13 +97,13 @@ function HomeHero() {
           <div className="col-span-6 row-span-2 row-start-5 flex items-center justify-center gap-2">
             <div className="w-full">
               <SpotlightCard
-                className="w-full h-full bg-white rounded-3xl p-6 flex flex-col justify-between"
+                className="w-full h-full bg-white rounded-3xl flex flex-col justify-between"
                 spotlightColor="rgba(0, 229, 255, 0.2)"
               >
-                <h3 className="text-[#21272A] text-xl font-bold mb-10">
+                <h3 className="text-[#21272A] text-xl px-6 pt-6 pb-8 font-bold">
                   Technologies I worked with:
                 </h3>
-                <div className="flex items-center justify-between gap-4 h-full bg-linear-[conic-gradient(from 270deg at 50% 50%, #FFF 0deg, #F2F4F8 360deg)]">
+                <div className="pl-6 pb-6 pt-4 flex items-center justify-between gap-4 h-full w-full hero-tech-items">
                   {ICON_COMPONENTS.map((item) => (
                     <item.component key={item.name} />
                   ))}

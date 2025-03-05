@@ -33,11 +33,11 @@ interface InfiniteScrollProps {
 }
 
 const InfiniteScroll: React.FC<InfiniteScrollProps> = ({
-  width = "100%",
-  maxHeight = "100%",
+  // width = "100%",
+  // maxHeight = "100%",
   negativeMargin = "0",
   items = [],
-  itemMinHeight = 150,
+  // itemMinHeight = 150,
   isTilted = false,
   tiltDirection = "left",
   autoplay = false,
@@ -58,7 +58,7 @@ const InfiniteScroll: React.FC<InfiniteScrollProps> = ({
     if (!divItems.length) return;
 
     const firstItem = divItems[0];
-    const itemStyle = getComputedStyle(firstItem);
+    // const itemStyle = getComputedStyle(firstItem);
     const itemHeight = firstItem.offsetHeight;
     const itemMarginTop = 0;
     const totalItemHeight = itemHeight;
@@ -135,7 +135,7 @@ const InfiniteScroll: React.FC<InfiniteScrollProps> = ({
       } else {
         return () => {
           observer.kill();
-          rafId && cancelAnimationFrame(rafId);
+          // rafId && cancelAnimationFrame(rafId);
         };
       }
     }
